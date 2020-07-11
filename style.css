@@ -88,6 +88,34 @@ nav {
   margin: 5px;
 }
 
+.nav-active {
+  background: white;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-3px, 8px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-3px, -8px);
+}
+
 /* Tablet */
 @media only screen and (max-width: 1024px) {
   .nav-links {
@@ -121,34 +149,6 @@ nav {
     display: block;
     cursor: pointer;
   }
-}
-
-.nav-active {
-  background: white;
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-3px, 8px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-3px, -8px);
 }
 
 /* ---------------------------------------------- HERO CONTENT ---------------------------------------------------------------------------- */
@@ -208,8 +208,6 @@ button {
   color: var(--primary);
 }
 
-/* ---------------------------------------------- HERO IMAGE  -------------------------------------------------------------------------- */
-
 .hero-image-container {
   width: 100%;
   height: 100vh;
@@ -266,17 +264,17 @@ button {
 
   .hero-content {
     text-align: left;
-    height: 50%;
+    height: 8git0%;
   }
 
   .hero-header {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 
   .hero-subheader {
-      font-size: 1.35rem;
-      line-height: 2rem;
-      opacity: 100%;
+    font-size: 1.35rem;
+    line-height: 2rem;
+    opacity: 100%;
   }
 
   .button {
@@ -287,6 +285,6 @@ button {
   }
 
   .hero-container-2 {
-      height: 40vh;
+    height: 40vh;
   }
 }
